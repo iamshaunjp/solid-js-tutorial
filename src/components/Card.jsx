@@ -1,9 +1,10 @@
-export default function Card() {
+export default function Card(props) {
   return (
-    <div class="bg-white p-4 text-center rounded-md shadow-md">
-      <h2>Card Component</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, enim?</p>
-      <button class="btn">read more</button>
+    <div 
+      class="bg-white p-4 text-center rounded-md shadow-md"
+      classList={{"rounded-md": props.rounded, "shadow-md": !props.flat}}
+    >
+      {props.children}
     </div>
   )
 }
