@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import styles from './App.module.css';
+import banner from './assets/banner.png';
+import Card from './components/Card';
 
 function App() {
+  console.log('hello, ninjas!')
+
   return (
-    <div class={styles.App}>
-      <header class={styles.header}>
-        <img src={logo} class={styles.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <a
-          class={styles.link}
-          href="https://github.com/solidjs/solid"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Solid
-        </a>
+    <div>
+      <header>
+        <h1>Ninja Merch</h1>
       </header>
+      
+      <img src={banner} alt="site banner" />
+      
+      <Card />
+      <Card />
+      <Card />
     </div>
   );
 }
