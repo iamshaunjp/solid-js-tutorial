@@ -1,4 +1,5 @@
 import { createResource } from "solid-js";
+import { A } from "@solidjs/router";
 
 import Card from "../components/Card";
 
@@ -19,6 +20,7 @@ export default function Home() {
             <Card rounded={true} flat={true}>
               <img src={product.img} alt="product image" />
               <h1 class="my-3 font-bold">{product.title}</h1>
+              <A href={`/product/${product.id}`} class="btn">View Product</A>
             </Card>
           )}
         </For>
