@@ -5,7 +5,7 @@ export const CartContext = createContext([])
 
 export function CartProvider(props) {
   const [items, setItems] = createStore([
-    {title: 'test item', quantity: 2, price: 15, id: 100}
+    
   ])
 
   return (
